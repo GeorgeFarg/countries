@@ -1,0 +1,129 @@
+:root {
+    --Dark_Blue: hsl(209, 23%, 22%);
+    --Very_Dark_Blue : hsl(207, 26%, 17%);
+    --Very_Dark_Blue: hsl(200, 15%, 8%);
+    --Dark_Gray: hsl(0, 0%, 52%);
+    --Very_Light_Gray: hsl(0, 0%, 98%);
+}
+
+body {
+    margin: 0;
+    font-family: "Nunito Sans";
+    padding: 0;
+}
+
+nav {
+    box-shadow: -2px 2px 6px 1px #7a7a7a78;;
+}
+
+.nav_bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.header {
+    font-family: "Nunito Sans";
+    margin: 0;
+}
+
+.bg-Very_Light_Gray {
+    background-color: var(--Very_Light_Gray);
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.container {
+    width: 84%;
+    margin: auto;
+}
+
+nav button {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    width: auto;
+    border: 0;
+    font-family: "Nunito Sans";
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+nav button:hover {
+
+    background-color: hsl(0deg 0% 92%);
+}
+
+nav button img {
+    width: 20px;
+    height: 20px;
+}
+
+/* search */
+.find {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+
+}
+
+.search {
+    width: 480px;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 10px;
+    padding-left: 30px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.search img {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+
+.search input {
+    border: 0;
+    width: 360px;
+    height: 30px;
+}
+
+
+.select{
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-right: 9.5px;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 5px;
+
+}
+
+.select select {
+    width: 200px;
+    height: 50px;
+    border: 0;
+    padding: 0 20px 0 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.select select option {
+    font-size: 16px;
+}
+
+.list {
+    width: 100%;
+    height: auto;
+}
