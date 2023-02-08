@@ -1,7 +1,6 @@
 :root {
     --Dark_Blue: hsl(209, 23%, 22%);
     --Very_Dark_Blue : hsl(207, 26%, 17%);
-    --Very_Dark_Blue: hsl(200, 15%, 8%);
     --Dark_Gray: hsl(0, 0%, 52%);
     --Very_Light_Gray: hsl(0, 0%, 98%);
 }
@@ -36,9 +35,42 @@ nav {
     background-color: white;
 }
 
+.bg-dark_blue {
+    background-color: var(--Dark_Blue);
+}
+
+.bg-dark_blue_button {
+    background-color: var(--Dark_Blue);
+    color: white;
+}
+
+.bg-dark_blue_button img {
+    fill: white;
+}
+
+.bg-dark_blue_button:hover {
+    background-color: hsl(209, 16%, 33%);
+}
+.bg-dark_gray {
+    background-color: var(--Dark_Gray);
+}
+.bg-very_dark_blue {
+    background-color: var(--Very_Dark_Blue);
+}
+
+.color-white {
+    color: white;
+}
+
+.fill_white {
+    filter: invert(99%) sepia(0%) saturate(841%) hue-rotate(57deg) brightness(117%) contrast(100%);
+}
+
 .container {
-    width: 84%;
-    margin: auto;
+    width: 85%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 nav button {
@@ -54,13 +86,13 @@ nav button {
 }
 
 nav button:hover {
-
     background-color: hsl(0deg 0% 92%);
 }
 
 nav button img {
     width: 20px;
     height: 20px;
+    margin-right: 10px;
 }
 
 /* search */
@@ -68,13 +100,13 @@ nav button img {
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
-
+    flex-wrap: wrap;
 }
 
 .search {
     width: 480px;
+    max-width: 100%;
     height: 50px;
-    background-color: white;
     display: flex;
     justify-content: left;
     align-items: center;
@@ -94,6 +126,7 @@ nav button img {
     border: 0;
     width: 360px;
     height: 30px;
+    background-color: transparent;
 }
 
 
@@ -105,7 +138,6 @@ nav button img {
     justify-content: space-around;
     padding-right: 9.5px;
     box-sizing: border-box;
-    background-color: white;
     border-radius: 5px;
 
 }
@@ -117,6 +149,7 @@ nav button img {
     padding: 0 20px 0 20px;
     box-sizing: border-box;
     border-radius: 5px;
+    background-color: transparent;
 }
 
 .select select option {
@@ -126,4 +159,44 @@ nav button img {
 .list {
     width: 100%;
     height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5%;
+}
+
+.list .card {
+    width: 270px;
+    height: 330px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin-top: 52px;
+    cursor: pointer;
+}
+
+.list .card .flag {
+    width: 100%;
+    height: 160px;
+    
+}
+
+.list .card .card_info {
+    padding: 20px 0 20px 25px;
+    box-sizing: border-box;
+    white-space: 10px;
+}
+
+.list .card .card_info h3{
+    margin: 0 0 12px;
+}
+
+.list .card .card_info p {
+    margin: 2px 0 0 ;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.list .card .card_info p span{
+    margin-left: 3px;
 }
